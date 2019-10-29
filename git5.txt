@@ -1,0 +1,17 @@
+clone代码
+git clone 代码地址
+
+pull代码
+git  pull --rebase origin dev_haval
+
+git add .
+git commit -m "修改信息"
+
+push代码
+git push origin HEAD:refs/for/dev_haval
+
+添加权限
+scp -p -P 8235 v_sunchun@icode.baidu.com:hooks/commit-msg $(git rev-parse --git-dir)/hooks
+
+恢复到上次提交的记录
+git reset 335bb0e71345d87166c670360e476358e9497635
